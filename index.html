@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="This is the web site of the Premium Bank."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/icon" href="./logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Premium Bank</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo-box">
+        <img class="logo" src="./logo.png" alt="" />
+      </div>
+      <div class="nav-right">
+        <div class="nav-block">
+          <div class="nav-login-box">
+            <p class="welcome-para">Login to get started</p>
+
+            <form class="login">
+              <input
+                type="text"
+                placeholder="User"
+                class="login__input login__input-user"
+              />
+              <input
+                type="password"
+                placeholder="PIN"
+                class="login__input login__input-pin"
+                maxlength="4"
+              />
+              <button class="login__btn">
+                <ion-icon class="login__icon" name="enter-outline"></ion-icon>
+              </button>
+            </form>
+            <div class="login-wrong">
+              <p>Wrong username or password !</p>
+            </div>
+          </div>
+        </div>
+        <div class="logout-box">
+          <button class="logout__btn">
+            Logout
+            <ion-icon class="login__icon" name="exit-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+      <div class="logout-box">
+        <button class="logout__btn">
+          Logout
+          <ion-icon class="login__icon" name="exit-outline"></ion-icon>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <div class="app">
+        <div class="welcome-box">
+          <div class="welcome-message">
+            <p>Wellcome back,</p>
+
+            <span class="welcome-username"> Petar</span>
+          </div>
+          <div class="welcome-date">
+            <span class="date-hour">20</span> :
+            <span class="date-min">22</span> :
+            <span class="date-sec">23</span> h
+          </div>
+        </div>
+        <div class="user-box">
+          <div class="user-info-box">
+            <h3>User information:</h3>
+            <div class="user-information user-information-name">
+              Full Name: <span></span>
+            </div>
+            <div class="user-information user-information-birth">
+              Birth date: <span></span>
+            </div>
+            <div class="user-information user-information-card">
+              Card Number:<span></span>
+            </div>
+            <div class="user-information user-information-balance">
+              Current balance: <span></span>
+            </div>
+          </div>
+          <div class="movesum">
+            <div class="movements">
+              <div class="movements-row">
+                <div class="movements-helper">
+                  <div class="movements-type movements-type-deposit">
+                    Deposit
+                  </div>
+                  <div class="movements-date">22.5.2022.</div>
+                </div>
+                <div class="movements-value">200 e</div>
+              </div>
+              <div class="movements-row">
+                <div class="movements-helper">
+                  <div class="movements-type movements-type-withdrawal">
+                    Withdrawal
+                  </div>
+                  <div class="movements-date">22.5.2022.</div>
+                </div>
+                <div class="movements-value">- 200 e</div>
+              </div>
+            </div>
+            <div class="summary-box">
+              <div class="summary summary-in">
+                <p>in</p>
+                <span class="summary-span summary-span-in">1223 </span>€
+              </div>
+              <div class="summary summary-out">
+                <p>out</p>
+                <span class="summary-span summary-span-out">3223</span>€
+              </div>
+              <div class="summary summary-interest">
+                <p>interest</p>
+                <span class="summary-span summary-span-interest">2323</span>€
+              </div>
+              <button class="btn-sort">Sort</button>
+            </div>
+          </div>
+        </div>
+        <div class="operation-box">
+          <div class="operation operation-transfer">
+            <h4 class="operation-title">Transfer Money</h4>
+            <form class="operation-form operation-form-transfer">
+              <input
+                type="text"
+                class="operation-input operation-input-to"
+                placeholder="Transfer to"
+              />
+              <input
+                type="number"
+                class="operation-input operation-input-amount"
+                placeholder="Amount"
+              />
+              <button class="operation-btn operation-btn-transfer">
+                &rarr;
+              </button>
+            </form>
+            <div class="action-message action-transfer">
+              <p class="action-text">
+                <ion-icon class="kvacica" name="checkmark-outline"></ion-icon>
+                <span> Transfer succes</span>
+              </p>
+            </div>
+          </div>
+          <div class="operation operation-loan">
+            <h4 class="operation-title">Request Loan</h4>
+            <form class="operation-form operation-form-loan">
+              <input
+                type="number"
+                class="operation-input operation-input-loan-amount"
+                placeholder="Amount"
+              />
+              <button class="operation-btn operation-btn-loan">&rarr;</button>
+            </form>
+          </div>
+          <div class="operation operation-close">
+            <h4 class="operation-title">Close Account</h4>
+            <form class="operation-form operation-form-close">
+              <input
+                type="text"
+                class="operation-input operation-input-close-user"
+                placeholder="Confrim user"
+              />
+              <input
+                type="password"
+                class="operation-input operation-input-close-pin"
+                placeholder="Confrim PIN"
+              />
+              <button class="operation-btn operation-btn-close">
+                &rarr;
+                <!-- <ion-icon class="icon-send" name="send"></ion-icon> -->
+              </button>
+            </form>
+            <div class="action-message action-close">
+              <p class="action-text">
+                <ion-icon class="kvacica" name="close-outline"></ion-icon>
+                <span> Invalid Inputs</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <button class="cheat-btn">
+      <ion-icon name="help-circle-outline"></ion-icon>
+    </button>
+
+    <div class="user-cheat">
+      <div class="user-cheat-user-pass">
+        <p>Username :</p>
+        <p>Password :</p>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <p>pp</p>
+            <p>1111</p>
+          </li>
+
+          <li>
+            <p>ii</p>
+            <p>2222</p>
+          </li>
+          <li>
+            <p>jmh</p>
+            <p>3333</p>
+          </li>
+          <li>
+            <p>mm</p>
+            <p>4444</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="close">
+        <button class="closeBtn">X</button>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
