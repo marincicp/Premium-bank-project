@@ -13,6 +13,8 @@ Simple bank application with functionality:
 -close account
 
 
+In this project I used : HTML5, CSS3 and JavaScript
+
 
 LIVE:
 https://petar-marincic-primium-bank.netlify.app/
