@@ -1,19 +1,7 @@
 # Premium-bank-project
 
-Simple bank application with functionality:
-
--login
-
--render all movements
-
--sort movements
-
--transfer money to other user or request loan
-
--close account
-
-
-In this project I used : HTML5, CSS3 and JavaScript
+This is a bank app, with login functionality, the ability to transfer money to other users, request loans, or close accounts, renders all movements and sorts.
+This project was great for practicing various array methods such as slice, filter, map, reduce, some and others. For user input I used dummy data.
 
 
 LIVE:
